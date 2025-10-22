@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Tracker - Analytics</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <h1>Job Tracker</h1>
+        <div class="nav-links">
+          <a href="index.html">Dashboard</a>
+          <a href="#" class="active">Analytics</a>
+          <button id="theme-toggle">🌙</button>
+          <button id="logout-btn">Logout</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Job Application Analytics</h2>
+
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>Applications by Status</h3>
+          <canvas id="statusChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Applications Over Time</h3>
+          <canvas id="timeChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>Applications by Company</h3>
+          <canvas id="companyChart"></canvas>
+        </div>
+      </div>
+
+      <div class="activity-log">
+        <h3>Recent Activity</h3>
+        <div id="activity-list" class="activity-list">
+          <!-- Activity items will be populated here -->
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/analytics.js"></script>
+</body>
+</html>
